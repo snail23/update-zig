@@ -1,5 +1,5 @@
 # Zig Updater
-Fetch the latest Zig master branch build easily with one command. `update-zig` will automatically parse `https://ziglang.org/download/index.json`, download the latest `x86_64-linux` archive, and unpack the contents to `$HOME/.zig`. You can run the command again and nothing will happen if a new build is not available so feel free to spam it however you like.
+Fetch the latest Zig master branch build easily with one command. `update-zig` will automatically parse https://ziglang.org/download/index.json, download the latest `x86_64-linux` archive, and unpack the contents to `$HOME/.zig`. You can run the command again and nothing will happen if a new build is not available so feel free to spam it however you like.
 
 ## Running
 `update-zig`
