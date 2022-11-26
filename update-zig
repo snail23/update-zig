@@ -1,6 +1,8 @@
 #!/bin/sh
 
 set -e
+
+mkdir -p $HOME/.zig
 cd $HOME/.zig
 
 wget -Omanifest -q https://ziglang.org/download/index.json
