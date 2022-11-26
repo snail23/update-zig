@@ -5,7 +5,7 @@ Fetch the latest Zig master branch build easily with one command. `update-zig` w
 `update-zig`
 
 ## Prerequisites
-Make sure the following extra packages are installed if any issues arise on your system:
+Make sure the following packages are installed if any issues arise on your system:
 - `gawk`
 - `dialog`
 - `jq`
