@@ -16,7 +16,7 @@ Make sure the following extra packages are installed if any issues arise on your
 ## Installing
 ```
 git clone https://github.com/snail23/update-zig $HOME/.zig
-chmod +x $home/.zig/update-zig
+chmod +x $HOME/.zig/update-zig
 ````
 
 Optionally, run `update-zig` on login as well as add `$HOME/.zig` to `PATH`:
