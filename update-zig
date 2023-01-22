@@ -15,7 +15,7 @@ if [ "$VERSION" != "$LATEST_VERSION" ]
 then
     jq -r ".master.version" manifest > version
 
-    wget -Ozig.xz --show-progress $(jq -r '.master["x86_64-linux"].tarball' manifest) 2>&1 | stdbuf -o0 awk '/[.] +[0-9][0-9]?[0-9]?%/ { print substr($0,63,3) }' | dialog --backtitle "Zig Updater" --title " Zig Updater " --gauge "Downloading v$(cat version)..." 0 44
+    wget -Ozig.xz --show-progress $(jq -r '.master["x86_64-linux"].tarball' manifest) 2>&1 | stdbuf -o0 awk '/[.] +[0-9][0-9]?[0-9]?%/ { print substr($0,63,3) }' | dialog --backtitle "Zig Updater" --title " Zig Updater " --gauge "Downloading v$(cat version)..." 0 47
     (pv -n zig.xz | xzcat -T0 | (tar xf - --strip-components=1)) 2>&1 | dialog --backtitle "Zig Updater" --title " Zig Updater " --gauge "Decompressing v$(cat version)..." 0 47
 
     rm zig.xz
