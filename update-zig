@@ -20,3 +20,4 @@ then
 
     rm zig.xz
 fi
+clear
